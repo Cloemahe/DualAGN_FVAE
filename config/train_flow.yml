@@ -1,0 +1,34 @@
+
+path_encod: '../data/encoding' ## Path for encodings
+n_run: 56
+
+gen: True
+test_on: True  
+
+## Workload param from VAE run
+new: False   ## New VAE run 
+type_loss: 'Fourier'
+num_run: 220  
+
+## Hyperparameters 
+
+# Training hyperparameters
+nb_epoch: 2 ## TEST 
+nb_made: 8    ## Number of MADE generated to create mu and sig (MADE = Variationnal Encoder with MASKED Dense layers) ## Size of MAF
+
+# Model hyperparameters
+latent_dim: 32
+b_size: 128
+
+init_lr: 0.001
+end_lr: 0.000001 # End lr
+decay: 0.002 
+power: 0.5   # Square-root decay with Poly
+
+# Test hyperparameters
+nb_sample: 10000 # Number of images to generate 
+nb_to_plot: 25 # Number of generated images to plot 
+nb_dim_to_plot: 5 # Number of dimensions to visualise 
+
+plot_every: 10 ## Number of posingauss displayed during training
+validation_every: 1 

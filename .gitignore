@@ -1,0 +1,8 @@
+.DS_Store
+*.zip
+*.pkl
+*.key
+*.pdf
+*__pycache__*
+scripts/utils/__pycache__/*
+*.pyc

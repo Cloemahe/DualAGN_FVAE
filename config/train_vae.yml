@@ -1,0 +1,25 @@
+path: '../data/objet'
+type_preprocessing: 'Arcsin hyp'  ## 'No processing' ou 'Arcsin hyp' ou 'Z-scale'
+type_loss: 'Fourier' ## 'Normal', 'Masked', 'Fourier', 'Composite'
+
+save: False
+test_on: True
+loop_run: False
+
+num_run: 221 ## Change for every run
+
+## Hyperparamètres
+
+nb_epoch: 1
+b_size: 128         # Batch size 
+shuffle_size: 1000 
+latent_dim: 32
+Beta: 0.1
+init_lr: 0.0001  ## /!\ Don't use scientific notation (ex:1e-4) as it is parsed as strings
+decay: 0.002
+R: 5               # Define the radius for the smooth ring 
+alpha: 4           # Steepness for increase (greater than 1 for steep increase) [3-5] for asinh, [2-6] for z-scale
+zeta: 40           # Smoothness for decrease (less than 1 for smooth decrease) [8-10] for asinh, [20-30] for z-scale
+intensity: 1
+FWi: 0.000001              # Fourier weight on loss
+validation_every: 1

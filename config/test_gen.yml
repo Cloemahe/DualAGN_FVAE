@@ -1,0 +1,17 @@
+### Hyperparameters ###
+nb_made: 8
+latent_dim: 32
+nb_sample: 1000 ## Number of images to generate
+nb_plot: 50 # Number of images to display
+save: True
+
+# For the flow
+run: 55
+
+# For the decoder
+type_loss: 'Fourier'
+num_run: 220
+
+# Paths
+path: '../data/' ## Path for list of encodings and scores
+

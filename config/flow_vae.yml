@@ -1,0 +1,46 @@
+## Hyperparameters
+
+path: '../data/objet'
+path_encod: "../data/encoding"  ## Path for encodings
+
+type_preprocessing: 'Arcsin hyp'
+type_loss: 'Fourier'
+
+save: False
+test_on: True
+loop_run: False
+gen: True
+
+new: True ## New VAE run
+num_run: 221 # Run of the VAE
+n_run: 54 # Run of the flow
+old_run: 53 ## For tests without training
+
+nb_epoch_vae: 2 ## TEST
+nb_epoch_flow: 1 ## TEST
+nb_made: 8 ## Number of MADE generated to create mu and sig (MADE = Variationnal Encoder with MASKED Dense layers) ## Size of MAF
+
+b_size: 128
+shuffle_size: 1000
+latent_dim: 32
+
+Beta: 0.1
+init_lr_vae: 0.0001
+init_lr_flow: 0.001
+end_lr: 0.000001
+decay: 0.002
+power: 0.5
+
+R: 5
+alpha: 4
+zeta: 40
+intensity: 1
+
+nb_sample: 10000
+nb_to_plot: 50
+nb_dim_to_plot: 5
+plot_every: 10
+
+FWi: 0.000001
+validation_every: 1
+

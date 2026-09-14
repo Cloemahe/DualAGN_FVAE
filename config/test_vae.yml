@@ -1,0 +1,10 @@
+num_run: 220
+
+latent_dim: 32
+type_loss: 'Fourier' 
+type_preprocessing: 'Arcsin hyp'
+
+R: 5  
+alpha: 4 
+zeta: 40
+intensity: 1

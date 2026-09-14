@@ -1,0 +1,24 @@
+## Workload parameters
+path_encod: '../data/encoding' ## Path for encodings
+path_label: '../data/objet'
+
+old_run: 55   ## For tests without training
+
+gen: False
+
+## Workload param from VAE run
+
+type_loss: 'Fourier'
+num_run: 220  ## LT = 32, beta = 0.1, n-epoch = 400
+
+## Hyperparameters 
+
+nb_made: 8    ## Number of MADE generated to create mu and sig (MADE = Variationnal Encoder with MASKED Dense layers) ## Size of MAF
+
+# Model hyperparameters
+latent_dim: 32
+
+# Test hyperparameters
+nb_sample: 10000 # Number of images to generate 
+nb_to_plot: 25 # Number of generated images to plot 
+nb_dim_to_plot: 5 # Number of dimensions to visualise
