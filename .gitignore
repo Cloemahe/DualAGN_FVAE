@@ -1,6 +1,5 @@
 .DS_Store
 *.zip
-*.pkl
 *.key
 *.pdf
 *__pycache__*
